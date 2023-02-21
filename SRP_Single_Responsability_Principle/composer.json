@@ -1,0 +1,15 @@
+{
+    "name": "domin/srp_single_responsability_principle",
+    "autoload": {
+        "psr-4": {
+            "Domin\\SrpSingleResponsabilityPrinciple\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "André Domingues",
+            "email": "dominguesstroppa@gmail.com"
+        }
+    ],
+    "require": {}
+}
