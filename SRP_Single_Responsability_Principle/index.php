@@ -22,3 +22,5 @@ if($carrinho1->confirmarPedido()){
     echo "Erro na confirmação. Carrinho vazio";
 }
 echo "Status: " . $carrinho1->exibirStatus() . "<br>";
+
+/*EXEMPLO NÃO SEGUIND O MOLDELO SRP*/ 
