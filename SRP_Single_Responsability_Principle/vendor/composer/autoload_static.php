@@ -7,20 +7,21 @@ namespace Composer\Autoload;
 class ComposerStaticInitf45b038ee8f83c9a5e7fbe5c8a369fdd
 {
     public static $prefixLengthsPsr4 = array (
-        'D' => 
+        'A' => 
         array (
-            'Domin\\SrpSingleResponsabilityPrinciple\\' => 39,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Domin\\SrpSingleResponsabilityPrinciple\\' => 
+        'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
+        'App\\CarrinhoCompra' => __DIR__ . '/../..' . '/src/CarrinhoCompra.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
