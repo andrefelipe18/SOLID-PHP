@@ -54,3 +54,4 @@ if($pedido->confirmar()){
 } else {
     echo "<h2>Não foi possível confirmar o pedido</h2>";
 }
+/*PRINCIPIO SRP CONCLUIDO E REFATORADO*/
