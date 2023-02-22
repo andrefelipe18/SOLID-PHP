@@ -1,8 +1,8 @@
 <?php
 namespace App;
 
-use App\File;
-
+use App\Extrator\FileCSV;
+use App\Extrator\FileTXT;
 class Leitor
 {
     private $diretorio;
@@ -32,13 +32,14 @@ class Leitor
         //vendo se o arquivo é csv ou txt
         $extensao = pathinfo($caminho, PATHINFO_EXTENSION);
         
-        $arquivo = new File();
-
         if($extensao == 'csv'){
-            $arquivo->lerArquivoCSV($caminho);
+            $file = new FileCSV();
+            $file->lerArquivo($caminho);
         }else if($extensao == 'txt'){
-            $arquivo->lerArquivoTXT($caminho);
+            $file = new FileTXT();
+            $file->lerArquivo($caminho);
+        }else{
+            throw new \Exception("Extensão inválida");
         }
-
     }
 }
