@@ -1,5 +1,5 @@
 {
-    "name": "domin/lsp_liskov_sub_principle_errado",
+    "name": "domin/lsp_liskov_sub_principle_correto",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
